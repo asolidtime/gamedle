@@ -1,0 +1,7 @@
+image:
+  file: Dockerfile
+ports:
+  - port: 8080
+    protocol: "http"
+  - port: 9876
+    protocol: "http"
