@@ -28,7 +28,7 @@ USER gitpod
 
 ENV PATH ${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/tools/bin:${ANDROID_HOME}/platform-tools
 
-RUN bash -c "source ~/.sdkman/bin/sdkman-init.sh && sdk list java && sdk install java 8.0.302-open && yes | sdkmanager --licenses && yes | sdkmanager --update --channel=3"
+RUN bash -c "source ~/.sdkman/bin/sdkman-init.sh && sdk list java && sdk install java 8.0.302-open && yes | sdkmanager --licenses && yes | sdkmanager --update --channel=3 && yes | sdkmanager 'platforms;android-29' 'build-tools;29.0.3' 'system-images;android-29;google_apis;x86' 'extras;android;m2repository' 'extras;google;m2repository' 'extras;google;google_play_services' 'extras;m2repository;com;android;support;constraint;constraint-layout;1.0.2' 'add-ons;addon-google_apis-google-23'"
 
 # RUN yes | sdkmanager --licenses
 
