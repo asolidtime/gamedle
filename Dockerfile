@@ -34,7 +34,7 @@ RUN bash -c "source ~/.sdkman/bin/sdkman-init.sh && \
 RUN yes | sdkmanager --licenses
 
 RUN yes | sdkmanager --update --channel=3
-Please keep all sections in descending order!
+# Please keep all sections in descending order!
 RUN yes | sdkmanager \
    "platforms;android-29" \
    "build-tools;29.0.3" \
