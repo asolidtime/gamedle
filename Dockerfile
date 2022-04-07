@@ -28,7 +28,7 @@ USER gitpod
 
 ENV PATH ${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/tools/bin:${ANDROID_HOME}/platform-tools
 
-RUN bash -c "source ~/.sdkman/bin/sdkman-init.sh && sdk list java && sdk install java 8.322.06.2-corretto"
+RUN bash -c "source ~/.sdkman/bin/sdkman-init.sh && sdk list java && sdk install java 8.0.302-open"
 
 RUN yes | sdkmanager --licenses
 
